@@ -293,41 +293,6 @@ h3 {
   font-weight: 600;
 }
 
-.hero-backdrop {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0.68;
-}
-
-.mesh-node,
-.mesh-link {
-  position: absolute;
-}
-
-.mesh-node {
-  width: 10px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent-soft), var(--primary));
-  box-shadow: 0 0 0 10px rgba(66, 159, 238, 0.08);
-  animation: pulse 3.8s ease-in-out infinite;
-}
-
-.mesh-link {
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(61, 145, 232, 0.5), transparent);
-  transform-origin: left center;
-}
-
-.node-a { top: 20%; right: 15%; }
-.node-b { top: 32%; right: 6%; animation-delay: 0.8s; }
-.node-c { top: 47%; right: 19%; animation-delay: 1.3s; }
-.node-d { top: 13%; right: 26%; animation-delay: 2s; }
-.link-a { top: 23%; right: 15%; width: 190px; transform: rotate(18deg); }
-.link-b { top: 34%; right: 8%; width: 110px; transform: rotate(118deg); }
-.link-c { top: 43%; right: 17%; width: 160px; transform: rotate(-40deg); }
-
 .intro-grid,
 .map-layout,
 .getting-started-grid,
@@ -347,14 +312,25 @@ h3 {
   letter-spacing: -0.05em;
 }
 
+.section-copy h2 + p,
+.section-heading h2 + p {
+  margin-top: 1.35rem;
+  line-height: 1.58;
+}
+
 .section-copy p + p,
 .section-heading p {
-  margin-top: 1rem;
+  margin-top: 0.85rem;
+  line-height: 1.58;
+}
+
+.section-copy p + .button,
+.section-copy p + .text-link {
+  margin-top: 1.55rem;
 }
 
 .text-link {
   display: inline-flex;
-  margin-top: 1.4rem;
   color: var(--accent);
   font-weight: 700;
 }
