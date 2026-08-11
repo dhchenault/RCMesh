@@ -6,57 +6,57 @@
   "featuredNodeId": "henderson-central",
   "nodes": [
     {
-      "id": "henderson-central",
-      "name": "Henderson Central",
+      "id": "FBC",
+      "name": "First Baptist Church",
       "type": "Backbone Repeater",
       "status": "online",
       "community": "Henderson",
-      "coverage": "Central Rusk County",
-      "antennaHeight": "100 ft AGL",
-      "installed": "April 2026",
-      "description": "Primary backbone site supporting Henderson and acting as a central relay for surrounding communities.",
+      "coverage": "Central Henderson",
+      "antennaHeight": "60 ft AGL",
+      "installed": "July 2026",
+      "description": "Primary backbone site supporting Henderson and acting as a central relay.",
       "x": 50,
       "y": 42,
       "showLabel": true
     },
     {
-      "id": "henderson-north",
-      "name": "Henderson North",
+      "id": "ballow-brothers",
+      "name": "Ballow Brothers",
       "type": "Backbone Repeater",
       "status": "online",
       "community": "Henderson",
       "coverage": "North Henderson",
-      "antennaHeight": "75 ft AGL",
-      "installed": "May 2026",
-      "description": "Backbone site extending dependable coverage across northern Henderson and adjacent rural corridors.",
+      "antennaHeight": "25 ft AGL",
+      "installed": "March 2026",
+      "description": "Backbone site extending dependable coverage across northern Henderson and adjacent rural areas.",
       "x": 56,
       "y": 22,
-      "showLabel": false
+      "showLabel": true
     },
     {
-      "id": "laneville",
-      "name": "Laneville Relay",
+      "id": "south-evenside",
+      "name": "South Evenside",
       "type": "Relay Node",
       "status": "online",
-      "community": "Laneville",
-      "coverage": "East Rusk County",
-      "antennaHeight": "70 ft AGL",
-      "installed": "May 2026",
-      "description": "Eastern relay helping bridge coverage toward Laneville and nearby rural routes.",
+      "community": "Henderson",
+      "coverage": "Eastern Henderson",
+      "antennaHeight": "20 ft AGL",
+      "installed": "June 2026",
+      "description": "Repeater helping bridge coverage on eastern side of Henderson.",
       "x": 73,
       "y": 28,
       "showLabel": true
     },
     {
-      "id": "new-london",
-      "name": "West Rusk Node",
-      "type": "Backbone Repeater",
+      "id": "w5cwt-505",
+      "name": "W5CWT 505",
+      "type": "Neighborhood Repeater",
       "status": "online",
-      "community": "New London",
-      "coverage": "West Rusk County",
-      "antennaHeight": "90 ft AGL",
-      "installed": "May 2026",
-      "description": "Backbone repeater serving western communities and improving message flow toward Overton and New London.",
+      "community": "Henderson",
+      "coverage": "North-Central Henderson",
+      "antennaHeight": "10 ft AGL",
+      "installed": "March 2026",
+      "description": "Providing coverage in the Hospital area, north of downtown Henderson.",
       "x": 28,
       "y": 58,
       "showLabel": true
@@ -73,7 +73,7 @@
       "description": "Local relay helping carry traffic between Tatum-area users and the broader backbone.",
       "x": 41,
       "y": 66,
-      "showLabel": true
+      "showLabel": false
     },
     {
       "id": "mount-enterprise",
@@ -87,7 +87,7 @@
       "description": "Southern repeater extending reach toward Mount Enterprise and helping connect lower-county routes.",
       "x": 58,
       "y": 72,
-      "showLabel": true
+      "showLabel": false
     },
     {
       "id": "north-county",
@@ -101,7 +101,7 @@
       "description": "Northern backbone site supporting traffic toward Overton and nearby communities.",
       "x": 43,
       "y": 18,
-      "showLabel": true
+      "showLabel": false
     },
     {
       "id": "oak-hill",
@@ -132,15 +132,15 @@
       "showLabel": false
     },
     {
-      "id": "joinerville",
-      "name": "Joinerville Spur",
-      "type": "Relay Node",
+      "id": "kn5g-treetop",
+      "name": "KN5G Treetop Repeater",
+      "type": "Repeater",
       "status": "online",
-      "community": "Overton",
-      "coverage": "Northwest corridor",
-      "antennaHeight": "58 ft AGL",
-      "installed": "July 2026",
-      "description": "Corridor relay improving path diversity toward the northwest side of the county.",
+      "community": "Joinerville",
+      "coverage": "West-Central Rusk County",
+      "antennaHeight": "35 ft AGL",
+      "installed": "March 2026",
+      "description": "Rural repeater improving coverage toward the west side of the county.",
       "x": 21,
       "y": 36,
       "showLabel": true
