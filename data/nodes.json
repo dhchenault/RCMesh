@@ -3,7 +3,7 @@
     "uptime": "24/7",
     "frequency": "915 MHz"
   },
-  "featuredNodeId": "henderson-central",
+  "featuredNodeId": "FBC",
   "nodes": [
     {
       "id": "FBC",
