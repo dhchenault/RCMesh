@@ -1,6 +1,5 @@
 const detailPanel = document.getElementById("node-detail");
 const nodeList = document.getElementById("node-list");
-const countyMap = document.getElementById("county-map");
 
 const formatStatus = (status) => status.charAt(0).toUpperCase() + status.slice(1);
 
@@ -54,74 +53,17 @@ const renderNodeCards = (nodes) => {
     .join("");
 };
 
-const distance = (a, b) => {
-  const dx = b.x - a.x;
-  const dy = b.y - a.y;
-  return Math.sqrt(dx * dx + dy * dy);
-};
-
-const angle = (a, b) => {
-  const dx = b.x - a.x;
-  const dy = b.y - a.y;
-  return Math.atan2(dy, dx) * (180 / Math.PI);
-};
-
-const renderConnections = (nodes) => {
-  const featured = nodes.slice(0, 1);
-  const linkedNodes = nodes.slice(1, 8);
-
-  linkedNodes.forEach((node) => {
-    const line = document.createElement("span");
-    line.className = "map-line";
-    line.style.left = `${featured[0].x}%`;
-    line.style.top = `${featured[0].y}%`;
-    line.style.width = `${distance(featured[0], node)}%`;
-    line.style.transform = `rotate(${angle(featured[0], node)}deg)`;
-    countyMap.appendChild(line);
-  });
-};
-
-const renderMap = (nodes, featuredNodeId) => {
-  countyMap.innerHTML = "";
-  renderConnections(nodes);
-
-  nodes.forEach((node) => {
-    const nodeButton = document.createElement("button");
-    nodeButton.className = "map-node";
-    nodeButton.type = "button";
-    nodeButton.style.left = `${node.x}%`;
-    nodeButton.style.top = `${node.y}%`;
-    nodeButton.setAttribute("aria-label", `${node.name} node`);
-
-    if (node.showLabel) {
-      const label = document.createElement("span");
-      label.className = "map-label";
-      label.textContent = node.community;
-      nodeButton.appendChild(label);
-    }
-
-    if (node.id === featuredNodeId) {
-      nodeButton.classList.add("active");
-      renderDetail(node);
-    }
-
-    nodeButton.addEventListener("click", () => {
-      document.querySelectorAll(".map-node").forEach((item) => item.classList.remove("active"));
-      nodeButton.classList.add("active");
-      renderDetail(node);
-    });
-
-    countyMap.appendChild(nodeButton);
-  });
-};
-
 const init = async () => {
   try {
     const response = await fetch("data/nodes.json");
     const data = await response.json();
     setStats(data);
     renderNodeCards(data.nodes);
-    renderMap(data.nodes, data.featuredNodeId);
+    const featuredNode =
+      data.nodes.find((node) => node.id === data.featuredNodeId) ?? data.nodes[0];
+    if (featuredNode) {
+      renderDetail(featuredNode);
+    }
   } catch (error) {
     console.error("Unable to load node data", error);
   }
