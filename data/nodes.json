@@ -62,76 +62,6 @@
       "showLabel": true
     },
     {
-      "id": "tatum-south",
-      "name": "Tatum South",
-      "type": "Relay Node",
-      "status": "online",
-      "community": "Tatum",
-      "coverage": "Southwest Rusk County",
-      "antennaHeight": "65 ft AGL",
-      "installed": "June 2026",
-      "description": "Local relay helping carry traffic between Tatum-area users and the broader backbone.",
-      "x": 41,
-      "y": 66,
-      "showLabel": false
-    },
-    {
-      "id": "mount-enterprise",
-      "name": "South County Relay",
-      "type": "Backbone Repeater",
-      "status": "online",
-      "community": "Easton",
-      "coverage": "Southern Rusk County",
-      "antennaHeight": "80 ft AGL",
-      "installed": "June 2026",
-      "description": "Southern repeater extending reach toward Mount Enterprise and helping connect lower-county routes.",
-      "x": 58,
-      "y": 72,
-      "showLabel": false
-    },
-    {
-      "id": "north-county",
-      "name": "North County",
-      "type": "Backbone Repeater",
-      "status": "online",
-      "community": "Overton",
-      "coverage": "Northern Rusk County",
-      "antennaHeight": "85 ft AGL",
-      "installed": "June 2026",
-      "description": "Northern backbone site supporting traffic toward Overton and nearby communities.",
-      "x": 43,
-      "y": 18,
-      "showLabel": false
-    },
-    {
-      "id": "oak-hill",
-      "name": "Oak Hill Link",
-      "type": "Relay Node",
-      "status": "online",
-      "community": "Henderson",
-      "coverage": "Central-East Rusk County",
-      "antennaHeight": "60 ft AGL",
-      "installed": "July 2026",
-      "description": "Link site improving connectivity for central-east traffic moving toward Henderson and Laneville.",
-      "x": 63,
-      "y": 47,
-      "showLabel": false
-    },
-    {
-      "id": "carlisle-east",
-      "name": "Carlisle East",
-      "type": "Relay Node",
-      "status": "online",
-      "community": "Mount Enterprise",
-      "coverage": "Southeast approach",
-      "antennaHeight": "55 ft AGL",
-      "installed": "July 2026",
-      "description": "Supports southeastern paths and helps strengthen route redundancy on the eastern side of the county.",
-      "x": 70,
-      "y": 58,
-      "showLabel": false
-    },
-    {
       "id": "kn5g-treetop",
       "name": "KN5G Treetop Repeater",
       "type": "Repeater",
@@ -144,34 +74,6 @@
       "x": 21,
       "y": 36,
       "showLabel": true
-    },
-    {
-      "id": "kilgore-link",
-      "name": "West Connector",
-      "type": "Relay Node",
-      "status": "online",
-      "community": "Overton",
-      "coverage": "Western corridor",
-      "antennaHeight": "52 ft AGL",
-      "installed": "July 2026",
-      "description": "Connector site helping maintain reliable westbound routing and traffic redundancy.",
-      "x": 18,
-      "y": 49,
-      "showLabel": false
-    },
-    {
-      "id": "easton-link",
-      "name": "Easton Link",
-      "type": "Relay Node",
-      "status": "online",
-      "community": "Laneville",
-      "coverage": "Northeast corridor",
-      "antennaHeight": "50 ft AGL",
-      "installed": "August 2026",
-      "description": "Newest relay strengthening northeast coverage and supporting future community expansion.",
-      "x": 79,
-      "y": 39,
-      "showLabel": false
     }
   ]
 }
