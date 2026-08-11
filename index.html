@@ -98,3 +98,228 @@
                 growth of a MeshCore-based communications network across the county.
                 Strategically placed backbone nodes and personal radios help people
                 exchange messages without depending on cell service, Wi-Fi, or the
+                Internet.
+              </p>
+              <a class="text-link" href="#getting-started">Learn more about joining</a>
+            </div>
+
+            <div class="feature-grid">
+              <article class="feature-card">
+                <span class="feature-icon">📡</span>
+                <h3>No Internet Required</h3>
+                <p>Communicate directly across the mesh when traditional services are unavailable.</p>
+              </article>
+              <article class="feature-card">
+                <span class="feature-icon">🤝</span>
+                <h3>Community Built</h3>
+                <p>Every new node improves resilience, reach, and local ownership of the network.</p>
+              </article>
+              <article class="feature-card">
+                <span class="feature-icon">💲</span>
+                <h3>Low-Cost Hardware</h3>
+                <p>Getting started can be surprisingly affordable, even for first-time users.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section stats-section" id="network">
+          <div class="container">
+            <div class="stats-bar" aria-label="Network overview">
+              <div class="stat">
+                <span class="stat-value" id="stat-nodes">12</span>
+                <span class="stat-label">Backbone Nodes</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value" id="stat-communities">7</span>
+                <span class="stat-label">Communities Reached</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value" id="stat-uptime">24/7</span>
+                <span class="stat-label">Community Network</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value" id="stat-frequency">915 MHz</span>
+                <span class="stat-label">LoRa Frequency</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section map-section" id="map">
+          <div class="container map-layout">
+            <div class="section-copy map-copy">
+              <p class="eyebrow">Explore the network</p>
+              <h2>See how the backbone stretches across the county.</h2>
+              <p>
+                This interactive county view is driven by a local JSON data file,
+                which means future node updates can happen without redesigning the page.
+              </p>
+              <a class="button button-primary button-small" href="#nodes">View node list</a>
+            </div>
+
+            <div class="map-card">
+              <div class="county-map" id="county-map" aria-label="Interactive network map"></div>
+              <aside class="node-detail" id="node-detail" aria-live="polite">
+                <p class="detail-kicker">Select a node</p>
+                <h3>Henderson Central</h3>
+                <p class="detail-status"><span class="status-dot online"></span> Online</p>
+                <ul class="detail-meta">
+                  <li><strong>Coverage:</strong> Central Rusk County</li>
+                  <li><strong>Antenna:</strong> 100 ft AGL</li>
+                  <li><strong>Installed:</strong> April 2026</li>
+                </ul>
+                <p>
+                  Backbone repeater supporting Henderson and nearby communities with
+                  dependable all-day coverage.
+                </p>
+              </aside>
+            </div>
+          </div>
+        </section>
+
+        <section class="section nodes-section" id="nodes">
+          <div class="container">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">Meet the network</p>
+                <h2>Real places. Real repeaters. Real community coverage.</h2>
+              </div>
+              <p>
+                The list below is generated from the same network data powering the
+                map, making it easy to keep the site current as the mesh grows.
+              </p>
+            </div>
+
+            <div class="node-list" id="node-list"></div>
+          </div>
+        </section>
+
+        <section class="section getting-started" id="getting-started">
+          <div class="container getting-started-grid">
+            <div class="section-copy">
+              <p class="eyebrow">Getting started</p>
+              <h2>Joining the mesh is easier than most people expect.</h2>
+              <p>
+                You do not need an expensive tower or a complicated setup to take part.
+                Most people can get on the air with a compatible device, a simple MeshCore
+                install, and a nearby node.
+              </p>
+            </div>
+
+            <div class="steps-card">
+              <div class="step">
+                <span class="step-number">01</span>
+                <div>
+                  <h3>Get a device</h3>
+                  <p>Start with a MeshCore-compatible radio. No amateur license is required for typical participation.</p>
+                </div>
+              </div>
+              <div class="step">
+                <span class="step-number">02</span>
+                <div>
+                  <h3>Install MeshCore</h3>
+                  <p>Connect the device to your phone or computer and configure your identity.</p>
+                </div>
+              </div>
+              <div class="step">
+                <span class="step-number">03</span>
+                <div>
+                  <h3>Connect to the mesh</h3>
+                  <p>Your device discovers nearby nodes and begins participating in the local network.</p>
+                </div>
+              </div>
+            </div>
+
+            <aside class="hardware-card">
+              <p class="eyebrow">Hardware ideas</p>
+              <h3>What should I buy?</h3>
+              <ul>
+                <li><strong>Just curious:</strong> a simple companion node</li>
+                <li><strong>Regular user:</strong> better antenna or portable kit</li>
+                <li><strong>Network builder:</strong> elevated or solar-ready repeater gear</li>
+              </ul>
+              <a class="button button-secondary button-small" href="#get-involved">Help build the network</a>
+            </aside>
+          </div>
+        </section>
+
+        <section class="section faq-section" id="faq">
+          <div class="container faq-grid">
+            <div class="section-copy">
+              <p class="eyebrow">Frequently asked questions</p>
+              <h2>Answers for first-time users and future node hosts.</h2>
+            </div>
+
+            <div class="faq-list">
+              <details open>
+                <summary>What is MeshCore?</summary>
+                <p>
+                  MeshCore is software for compatible LoRa devices that allows short text
+                  communication across a decentralized mesh network.
+                </p>
+              </details>
+              <details>
+                <summary>Do I need Internet or cell service?</summary>
+                <p>
+                  No. The mesh is designed to pass messages locally between devices and
+                  backbone nodes without relying on cellular data or Wi-Fi.
+                </p>
+              </details>
+              <details>
+                <summary>Do I need an amateur radio license?</summary>
+                <p>
+                  Not for the basic device types typically used for MeshCore participation,
+                  though specific hardware choices should always be verified before deployment.
+                </p>
+              </details>
+              <details>
+                <summary>How can I help expand the network?</summary>
+                <p>
+                  You can participate with a personal node, host equipment at an elevated
+                  location, help install hardware, or support infrastructure planning.
+                </p>
+              </details>
+            </div>
+          </div>
+        </section>
+
+        <section class="section cta-section" id="get-involved">
+          <div class="container cta-card">
+            <div>
+              <p class="eyebrow">Help us build the network</p>
+              <h2>Every participant makes the mesh stronger.</h2>
+              <ul class="cta-list">
+                <li>Run a personal node</li>
+                <li>Host a repeater site</li>
+                <li>Provide an elevated location</li>
+                <li>Support local infrastructure</li>
+              </ul>
+            </div>
+
+            <div class="cta-actions">
+              <a class="button button-primary" href="#getting-started">Join Rusk County Mesh</a>
+              <a class="button button-secondary" href="#map">Review the network</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-inner">
+          <div>
+            <strong>Rusk County Mesh</strong>
+            <p>Community-powered resilient communications for Rusk County, Texas.</p>
+          </div>
+          <div class="footer-links">
+            <a href="#network">Network</a>
+            <a href="#getting-started">Get Connected</a>
+            <a href="#faq">FAQ</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
