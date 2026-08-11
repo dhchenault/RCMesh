@@ -98,3 +98,33 @@ const renderMap = (nodes, featuredNodeId) => {
       label.className = "map-label";
       label.textContent = node.community;
       nodeButton.appendChild(label);
+    }
+
+    if (node.id === featuredNodeId) {
+      nodeButton.classList.add("active");
+      renderDetail(node);
+    }
+
+    nodeButton.addEventListener("click", () => {
+      document.querySelectorAll(".map-node").forEach((item) => item.classList.remove("active"));
+      nodeButton.classList.add("active");
+      renderDetail(node);
+    });
+
+    countyMap.appendChild(nodeButton);
+  });
+};
+
+const init = async () => {
+  try {
+    const response = await fetch("data/nodes.json");
+    const data = await response.json();
+    setStats(data);
+    renderNodeCards(data.nodes);
+    renderMap(data.nodes, data.featuredNodeId);
+  } catch (error) {
+    console.error("Unable to load node data", error);
+  }
+};
+
+init();
